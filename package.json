@@ -1,0 +1,66 @@
+{
+  "name": "css-unused-finder",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Paste a stylesheet and get an instant fragility + dead-class report: !important pileups, brittle selectors, runaway specificity, and classes no markup uses.",
+  "keywords": [
+    "css",
+    "css-analysis",
+    "specificity",
+    "dead-code",
+    "unused-css",
+    "linter",
+    "code-quality",
+    "nextjs",
+    "react"
+  ],
+  "author": "kea0811 <kea08111@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/kea0811/css-unused-finder#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kea0811/css-unused-finder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kea0811/css-unused-finder/issues"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "next": "^15.1.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.7",
+    "@types/react": "^19.0.7",
+    "@types/react-dom": "^19.0.3",
+    "@vitest/coverage-v8": "^2.1.8",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^15.1.6",
+    "jsdom": "^25.0.1",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.3",
+    "vitest": "^2.1.8"
+  },
+  "engines": {
+    "node": ">=18.18"
+  },
+  "packageManager": "pnpm@10.28.1",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
+}

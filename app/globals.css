@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  background-color: #08080f;
+  color: #e7e8f4;
+}
+
+/* A calm radial wash so the dark canvas doesn't read as flat black. */
+body {
+  background-image:
+    radial-gradient(60rem 60rem at 12% -10%, rgba(99, 102, 241, 0.16), transparent 60%),
+    radial-gradient(50rem 50rem at 95% 0%, rgba(236, 72, 153, 0.1), transparent 55%);
+  background-attachment: fixed;
+}
+
+::selection {
+  background: rgba(129, 140, 248, 0.32);
+}
+
+/* Respect users who prefer reduced motion across every transition we add. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
