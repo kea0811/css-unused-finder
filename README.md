@@ -2,11 +2,12 @@
 
 > Paste a stylesheet, get an instant **fragility + dead-class report** — no build step, no upload, nothing leaves your browser.
 
+![npm version](https://img.shields.io/npm/v/css-unused-finder.svg)
 ![tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)
 ![coverage](https://img.shields.io/badge/coverage-100%25-brightgreen.svg)
 ![license](https://img.shields.io/badge/license-MIT-blue.svg)
 
-**🌐 [Live demo →](https://css-unused-finder.vercel.app)**
+**🌐 [Live demo →](https://css-unused-finder.vercel.app)** · **📦 [npm →](https://www.npmjs.com/package/css-unused-finder)**
 
 CSS rarely breaks because a rule is _wrong_ — it breaks because a rule is _fragile_. An
 `!important` here, an ID selector there, a five-level descendant chain that assumes the markup
@@ -49,9 +50,29 @@ merely failed to understand.
 The fastest path is the hosted app — **[css-unused-finder.vercel.app](https://css-unused-finder.vercel.app)**.
 Paste, hit **Load example** to see it in action, done.
 
+## In your terminal
+
+Prefer the command line — or need it in CI? The same engine ships as a CLI on npm, no browser required:
+
+```bash
+npx css-unused-finder styles.css                     # graded fragility report
+npx css-unused-finder styles.css --html index.html   # also lists dead classes
+npx css-unused-finder styles.css --json              # raw JSON report
+npx css-unused-finder styles.css --min-grade B       # CI gate: exits 1 if worse than B
+```
+
+Install it globally with `npm i -g css-unused-finder`, or call the engine programmatically:
+
+```ts
+import { analyze } from 'css-unused-finder';
+
+const report = analyze({ css, markup });
+console.log(report.grade, report.fragilityScore);
+```
+
 ## Use it from a script
 
-There's a stateless JSON endpoint behind the same engine, handy for CI or a quick check:
+There's also a stateless JSON endpoint behind the same engine, handy for CI or a quick check:
 
 ```bash
 curl -X POST https://css-unused-finder.vercel.app/api/analyze \
@@ -94,6 +115,8 @@ strings, comments, `@keyframes` blocks and braces inside attribute values). A sp
 specificity calculator scores each selector — including `:is()` / `:where()` / `:not()` — and a set
 of heuristic rules surface the fragile patterns. Everything is pure functions, which is why the
 engine ships at 100% test coverage.
+
+→ A deeper write-up of the design (and why the CSS parser is hand-rolled): **[How I built it](https://tech-brew.xyz/article/css-unused-finder)**.
 
 ## Caveats
 
