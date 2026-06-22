@@ -1,0 +1,68 @@
+{
+  "name": "css-unused-finder",
+  "version": "0.1.0",
+  "description": "Score a stylesheet's fragility (A–F) and surface !important, ID selectors, deep nesting, and dead classes — one CLI command, no config.",
+  "keywords": [
+    "css",
+    "fragility",
+    "specificity",
+    "dead-classes",
+    "unused-css",
+    "cli",
+    "lint",
+    "refactor",
+    "stylesheet",
+    "css-quality"
+  ],
+  "author": "kea0811",
+  "license": "MIT",
+  "homepage": "https://css-unused-finder.vercel.app",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kea0811/css-unused-finder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kea0811/css-unused-finder/issues"
+  },
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "bin": {
+    "css-unused-finder": "./dist/bin.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "SKILL.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "@vitest/coverage-v8": "^2.1.2",
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.2",
+    "vitest": "^2.1.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
