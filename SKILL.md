@@ -26,13 +26,13 @@ User does NOT mean this when they ask for:
 
 ## Use it
 
-**Hosted app:** https://css-unused-finder.vercel.app — paste CSS (and optionally HTML/JSX), read
+**Hosted app:** https://css-unused-finder-three.vercel.app — paste CSS (and optionally HTML/JSX), read
 the grade + findings + dead classes. Everything runs client-side.
 
 **Stateless API (for scripts / CI):**
 
 ```bash
-curl -X POST https://css-unused-finder.vercel.app/api/analyze \
+curl -X POST https://css-unused-finder-three.vercel.app/api/analyze \
   -H 'content-type: application/json' \
   -d '{"css":".a{color:red!important}","markup":"<div class=\"a\"></div>"}'
 ```
@@ -65,6 +65,6 @@ and only the fragility report comes back. Nothing is stored.
 
 ## Links
 
-- Live tool: https://css-unused-finder.vercel.app
-- API: `POST https://css-unused-finder.vercel.app/api/analyze`
+- Live tool: https://css-unused-finder-three.vercel.app
+- API: `POST https://css-unused-finder-three.vercel.app/api/analyze`
 - Repo: https://github.com/kea0811/css-unused-finder

@@ -7,7 +7,7 @@
 ![coverage](https://img.shields.io/badge/coverage-100%25-brightgreen.svg)
 ![license](https://img.shields.io/badge/license-MIT-blue.svg)
 
-**🌐 [Live demo →](https://css-unused-finder.vercel.app)** · **📦 [npm →](https://www.npmjs.com/package/css-unused-finder)**
+**🌐 [Live demo →](https://css-unused-finder-three.vercel.app)** · **📦 [npm →](https://www.npmjs.com/package/css-unused-finder)**
 
 CSS rarely breaks because a rule is _wrong_ — it breaks because a rule is _fragile_. An
 `!important` here, an ID selector there, a five-level descendant chain that assumes the markup
@@ -47,7 +47,7 @@ merely failed to understand.
 
 ## Try it
 
-The fastest path is the hosted app — **[css-unused-finder.vercel.app](https://css-unused-finder.vercel.app)**.
+The fastest path is the hosted app — **[css-unused-finder-three.vercel.app](https://css-unused-finder-three.vercel.app)**.
 Paste, hit **Load example** to see it in action, done.
 
 ## In your terminal
@@ -75,7 +75,7 @@ console.log(report.grade, report.fragilityScore);
 There's also a stateless JSON endpoint behind the same engine, handy for CI or a quick check:
 
 ```bash
-curl -X POST https://css-unused-finder.vercel.app/api/analyze \
+curl -X POST https://css-unused-finder-three.vercel.app/api/analyze \
   -H 'content-type: application/json' \
   -d '{"css":".a{color:red!important} .ghost{}","markup":"<div class=\"a\"></div>"}'
 ```

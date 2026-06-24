@@ -125,5 +125,5 @@ report.deadClasses;    // { definedClasses, usedClasses, unusedClasses, markupPr
 ## Links
 
 - npm: https://www.npmjs.com/package/css-unused-finder
-- landing: https://css-unused-finder.vercel.app
+- landing: https://css-unused-finder-three.vercel.app
 - repo: https://github.com/kea0811/css-unused-finder

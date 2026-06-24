@@ -4,7 +4,7 @@
 ![coverage](https://img.shields.io/badge/coverage-100%25-brightgreen.svg)
 ![license](https://img.shields.io/badge/license-MIT-blue.svg)
 
-**🌐 [Live demo →](https://css-unused-finder.vercel.app)**
+**🌐 [Live demo →](https://css-unused-finder-three.vercel.app)**
 
 > Grade a stylesheet's fragility A–F and see exactly what makes it brittle — the `!important` chasers, the ID selectors, the four-levels-deep chains, and the classes nothing renders.
 
@@ -172,7 +172,7 @@ Every helper the CLI uses — `parseStylesheet`, `computeSpecificity`, `findDead
 
 ## Live demo
 
-See it in action at **[css-unused-finder.vercel.app](https://css-unused-finder.vercel.app)** — a static page with a sample run.
+See it in action at **[css-unused-finder-three.vercel.app](https://css-unused-finder-three.vercel.app)** — a static page with a sample run.
 
 ## Contributing
 

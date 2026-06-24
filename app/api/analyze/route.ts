@@ -8,7 +8,7 @@ export const runtime = 'edge';
  * the UI renders — handy for scripting or CI. Nothing is stored.
  *
  * ```bash
- * curl -X POST https://css-unused-finder.vercel.app/api/analyze \
+ * curl -X POST https://css-unused-finder-three.vercel.app/api/analyze \
  *   -H 'content-type: application/json' \
  *   -d '{"css":".a{color:red!important}"}'
  * ```

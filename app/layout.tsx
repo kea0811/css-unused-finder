@@ -17,7 +17,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://css-unused-finder.vercel.app'),
+  metadataBase: new URL('https://css-unused-finder-three.vercel.app'),
   title: 'css-unused-finder — fragility & dead-class report for your CSS',
   description:
     'Paste a stylesheet and get an instant report: !important pileups, brittle selectors, runaway specificity, and classes no markup uses. Everything runs in your browser.',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     description:
       'A fragility + dead-class report for any stylesheet, computed entirely in your browser.',
     type: 'website',
-    url: 'https://css-unused-finder.vercel.app',
+    url: 'https://css-unused-finder-three.vercel.app',
   },
   twitter: {
     card: 'summary_large_image',
