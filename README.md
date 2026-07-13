@@ -19,7 +19,7 @@ account, no upload, no waiting on a build.
 
 ## For AI coding agents
 
-Drop [`SKILL.md`](./SKILL.md) into your AI editor / Claude Code workspace and it learns how to use
+Drop [`SKILL.md`](./SKILL.md) into your AI editor / coding agent workspace and it learns how to use
 this tool — when to reach for it, the hosted URL, the stateless `/api/analyze` endpoint, and the
 gotchas that are easy to miss.
 
